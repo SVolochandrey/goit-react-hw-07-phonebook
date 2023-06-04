@@ -15,7 +15,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const nameInContacts = items.find(
-      contact => contact.name.toLowerCase() === name.toLowerCase()
+      contact => contact.name && contact.name.toLowerCase() === name.toLowerCase()
     );
 
     nameInContacts

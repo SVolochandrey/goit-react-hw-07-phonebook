@@ -9,7 +9,7 @@ const ContactList = () => {
 
   const dispatch = useDispatch();
   const filteredContacts = items.filter(contact =>
-    contact.name.toLowerCase().includes(filter.toLowerCase())
+    contact.name && contact.name.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
